@@ -196,6 +196,9 @@ body{
   .footer{
     padding: 100px 100px;
   }
+  .navbar{
+    scale: 1.5;
+  }
 }
 @media (max-width: 660px){
   .logins{

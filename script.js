@@ -118,36 +118,4 @@ function addPalettes(noOfColors,times) {
   }
 }
 
-function openGeneratorPage(){
-  const container = document.querySelector(".container");
-  container.innerHTML= `
-  <div class="generator-container">
-      <h1>Color Palette Generator</h1>
-    <button class="generate-btn"> <i class="fa-solid fa-arrows-rotate"></i> Generate Palette</button>
-    <div class="color-container">
-
-      <div class="color" id="clr1">
-        <div class="color-info">
-          <div class="hex-value">#456d4e</div>
-          <i class="fa-regular fa-copy copy-btn"></i>
-        </div>
-      </div>
-      <div class="color" id="clr2"><div class="color-info"><div class="hex-value">#456d4e</div> <i class="fa-regular fa-copy copy-btn"></i></div></div>
-      <div class="color" id="clr3"><div class="color-info"><div class="hex-value">#456d4e</div> <i class="fa-regular fa-copy copy-btn"></i></div></div>
-      <div class="color" id="clr4"><div class="color-info"><div class="hex-value">#456d4e</div> <i class="fa-regular fa-copy copy-btn"></i></div></div>
-      <div class="color" id="clr5"><div class="color-info"><div class="hex-value">#456d4e</div> <i class="fa-regular fa-copy copy-btn"></i></div></div>
-       
-      
-    </div>
-  </div>
-  
-  `;
-    
-  setTimeout(() => {
-    scriptDelay()
-  },1000);
-}
-
-function scriptDelay(){
-   document.getElementById('genScript').src = 'generatorScript.js';
-}
+ 
