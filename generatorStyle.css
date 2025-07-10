@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+.generator-container{
+  font-family: roboto;
+  /* height: 23rem;
+  width: 45rem; */ 
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 50px #8c8b8b;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  /* justify-content: center; */
+
+}
+h1{
+  text-align: center;
+  color: rgb(38, 38, 38);
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  word-spacing: 5px;
+}
+h1::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #667eea;
+  height: 3px;
+  width: 45%;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+.generate-btn{
+  font-size: 1rem;
+  width: fit-content;
+  border-radius: 50px;
+  border: none;
+  padding: 0.8rem 1.5rem ;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  cursor: pointer;
+}
+.color-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(130px,1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.color{
+  height: 10rem;
+  width: 8rem;
+  background-color: red;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 5px 5px 12px rgb(202, 202, 202);
+}
+.color-info{
+  height: 25%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  top:75%;
+  display: flex;
+  padding: 0.7rem;
+  justify-content: space-between;
+  align-items: center;
+  cursor: text;
+}
+.hex-value{
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+.copy-btn{
+  color: #64748b;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.copy-btn:hover{
+  color: #667eea;
+}
+.check-btn{
+  color: rgb(8, 178, 8);
+}
+.color:hover{
+  transform: translateY(-8px);
+}
+
+
+
+@media (max-width: 548px){
+
+  .color-container{
+    grid-template-columns: repeat(auto-fit , minmax(100px,1fr));
+  }
+   
+}
